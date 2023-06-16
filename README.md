@@ -1,11 +1,11 @@
-About r-kutils
-==============
+About r-kutils-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-kutils-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=kutils
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-kutils-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for data importation, recoding, and inspection. There are functions to create new project folders, R code templates, create uniquely named output directories, and to quickly obtain a visual summary for each variable in a data frame.  The main feature here is the systematic implementation of the "variable key" framework for data importation and recoding.  We are eager to have community feedback about the variable key and the vignette about it. In version 1.7, the function 'semTable' is removed. It was deprecated since 1.67. That is provided in a separate package, 'semTable'.
 

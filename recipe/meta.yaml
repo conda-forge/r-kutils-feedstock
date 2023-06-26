@@ -1,4 +1,4 @@
-{% set version = '1.70' %}
+{% set version = "1.72" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/kutils_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/kutils/kutils_{{ version }}.tar.gz
-  sha256: 67d0a03ad600ed7f4eea072476baa0664c3fb2d116c326856b550ebcb831531a
+  sha256: e44e867ffeeb4b3b81b1033ee1bb233a75cc95e3fb6a5a64e25af3eb5680d956
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
 
   rpaths:
@@ -50,18 +50,12 @@ test:
 about:
   home: https://CRAN.R-project.org/package=kutils
   license: GPL-2.0-only
-  summary: Tools for data importation, recoding, and inspection. There are functions to create
-    new project folders, R code templates, create uniquely named output directories,
-    and to quickly obtain a visual summary for each variable in a data frame.  The main
-    feature here is the systematic implementation of the "variable key" framework for
-    data importation and recoding.  We are eager to have community feedback about the
-    variable key and the vignette about it. In version 1.7, the function 'semTable'
-    is removed. It was deprecated since 1.67. That is provided in a separate package,
-    'semTable'.
+  summary: Tools for data importation, recoding, and inspection. There are functions to create new project folders, R code templates, create uniquely named output directories, and to quickly obtain a visual summary for each variable in a data frame.  The main feature here is the systematic implementation of the "variable
+    key" framework for data importation and recoding.  We are eager to have community feedback about the variable key and the vignette about it. In version 1.7, the function 'semTable' is removed. It was deprecated since 1.67. That is provided in a separate package, 'semTable'.
 
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:

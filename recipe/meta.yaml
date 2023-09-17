@@ -1,4 +1,4 @@
-{% set version = "1.72" %}
+{% set version = "1.73" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/kutils_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/kutils/kutils_{{ version }}.tar.gz
-  sha256: e44e867ffeeb4b3b81b1033ee1bb233a75cc95e3fb6a5a64e25af3eb5680d956
+  sha256: 8919b8a93924cc0072fa04f7cb0a70b2bd20f5f8dc615a0117f63a85880e0f77
 
 build:
   merge_build_host: true  # [win]
